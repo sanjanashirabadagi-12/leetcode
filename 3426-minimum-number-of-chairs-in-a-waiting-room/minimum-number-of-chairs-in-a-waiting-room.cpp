@@ -7,10 +7,10 @@ public:
             if(s[i] == 'E') {
                 c++;
             }
-            maxx = max(maxx,c);
-            if(s[i] == 'L') {
+            else if(s[i] == 'L') {
                 c--;
             }
+            maxx = max(maxx,c);
         }
         return maxx;
         
